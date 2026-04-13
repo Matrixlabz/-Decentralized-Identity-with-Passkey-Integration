@@ -1,0 +1,20 @@
+{
+  "name": "@decentralized-identity/shared",
+  "version": "1.0.0",
+  "description": "Shared types and utilities for decentralized identity platform",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "stellar-sdk": "^11.0.0",
+    "@stellar/stellar-base": "^11.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
