@@ -2,7 +2,7 @@ import { Router, Request, Response } from 'express'
 import { asyncHandler } from '@/middleware/errorHandler'
 import { DisclosureService } from '@/services/disclosure'
 import { IdentityService } from '@/services/identity'
-import { authenticateToken } from './auth'
+import { authenticateToken } from '@/middleware/auth'
 import { createError } from '@/middleware/errorHandler'
 import { logger } from '@/utils/logger'
 
