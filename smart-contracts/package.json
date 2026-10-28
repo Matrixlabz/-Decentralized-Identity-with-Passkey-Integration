@@ -16,7 +16,7 @@
   "dependencies": {
     "@stellar/stellar-sdk": "^11.0.0",
     "@stellar/stellar-base": "^11.0.0",
-    "@decentralized-identity/shared": "workspace:*",
+    "@decentralized-identity/shared": "*",
     "dotenv": "^16.3.1"
   },
   "devDependencies": {
