@@ -105,7 +105,10 @@ public
 .DS_Store
 Thumbs.db
 
-# Stellar
+# Stellar & Rust
+target/
+smart-contracts/target/
+test_snapshots/
 *.wasm
 stellar-core
 
