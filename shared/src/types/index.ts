@@ -2,10 +2,12 @@ export interface Identity {
   id: string;
   publicKey: string;
   stellarAddress: string;
+  displayName?: string;
   createdAt: Date;
   updatedAt: Date;
   attributes: IdentityAttribute[];
   verifications: Verification[];
+  didDocument?: DIDDocument;
 }
 
 export interface IdentityAttribute {
@@ -56,6 +58,19 @@ export interface PasskeyCredential {
   algorithm: string;
   userHandle?: string;
   transports?: string[];
+  createdAt?: Date;
+  counter?: number;
+}
+
+export interface StoredCredential {
+  credentialId: string;
+  publicKey: string;
+  userId: string;
+  authenticatorData: string;
+  clientDataJSON: string;
+  counter?: number;
+  transports?: string[];
+  createdAt: Date;
 }
 
 export interface SelectiveDisclosureRequest {
@@ -69,10 +84,13 @@ export interface SelectiveDisclosureRequest {
 
 export interface SelectiveDisclosureResponse {
   requestId: string;
+  identityId: string;
+  commitmentRoot: string;
   disclosedAttributes: Record<string, string>;
   proofs: Record<string, string>;
   signature: string;
   timestamp: Date;
+  revoked?: boolean;
 }
 
 export interface StellarContract {
@@ -93,4 +111,25 @@ export interface ZKProof {
   proof: string;
   publicInputs: string[];
   verificationKey: string;
+}
+
+export interface DIDDocument {
+  '@context': string[];
+  id: string;
+  verificationMethod: Array<{
+    id: string;
+    type: string;
+    controller: string;
+    publicKeyMultibase?: string;
+    publicKeyJwk?: Record<string, any>;
+  }>;
+  authentication: string[];
+  assertionMethod: string[];
+}
+
+export interface WebAuthnChallengeSession {
+  challenge: string;
+  userId?: string;
+  createdAt: number;
+  expiresAt: number;
 }
