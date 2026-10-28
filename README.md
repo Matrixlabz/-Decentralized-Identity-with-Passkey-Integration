@@ -6,6 +6,16 @@ Eliminates seed phrases, insecure passwords, and centralized identity intermedia
 
 ---
 
+### 🌐 Live Production Deployment
+
+- **Live Production URL**: [https://decentralized-identity-passkey-topmatrixmor.vercel.app](https://decentralized-identity-passkey-topmatrixmor.vercel.app)
+- **Deployment Preview**: [https://decentralized-identity-passkey-9cahl9ip9-topmatrixmor.vercel.app](https://decentralized-identity-passkey-9cahl9ip9-topmatrixmor.vercel.app)
+- **Platform Deployment Status**: ✅ **READY (Active & Deployed on Vercel)**
+- **Framework & Bundler**: React 18 + Vite + TailwindCSS
+- **Smart Contract Target**: Stellar Soroban Testnet
+
+---
+
 ## 🌟 Key Features
 
 - **Biometric Passkey Authentication**: Hardware-backed WebAuthn registration and authentication leveraging modern device enclaves (Touch ID, Face ID, Windows Hello) with RFC 8809 authenticator flags.
