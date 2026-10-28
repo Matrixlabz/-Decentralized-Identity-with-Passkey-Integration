@@ -7,7 +7,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
-      "@decentralized-identity/shared": path.resolve(__dirname, "../shared/src"),
+      "@decentralized-identity/shared": path.resolve(__dirname, "./src/shared"),
     },
   },
   server: {

@@ -25,7 +25,7 @@
       "@/types/*": ["./src/types/*"],
       "@/utils/*": ["./src/utils/*"],
       "@/store/*": ["./src/store/*"],
-      "@decentralized-identity/shared": ["../shared/src"]
+      "@decentralized-identity/shared": ["./src/shared"]
     }
   },
   "include": ["src"],

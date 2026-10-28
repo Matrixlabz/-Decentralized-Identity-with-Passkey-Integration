@@ -1,4 +1,4 @@
-import { Keypair } from '@stellar/stellar-sdk';
+import { Keypair } from 'stellar-sdk';
 
 /**
  * Isomorphic cryptographic helper functions for Node and Browser environments.
