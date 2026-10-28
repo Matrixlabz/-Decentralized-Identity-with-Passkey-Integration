@@ -24,7 +24,8 @@
       "@/services/*": ["./src/services/*"],
       "@/types/*": ["./src/types/*"],
       "@/utils/*": ["./src/utils/*"],
-      "@/store/*": ["./src/store/*"]
+      "@/store/*": ["./src/store/*"],
+      "@decentralized-identity/shared": ["../shared/src"]
     }
   },
   "include": ["src"],

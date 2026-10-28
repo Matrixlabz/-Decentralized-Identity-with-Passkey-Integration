@@ -30,7 +30,7 @@
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-switch": "^1.0.3",
     "stellar-sdk": "^11.0.0",
-    "@decentralized-identity/shared": "workspace:*",
+    "@decentralized-identity/shared": "*",
     "axios": "^1.5.0"
   },
   "devDependencies": {
